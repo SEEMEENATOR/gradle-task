@@ -1,0 +1,15 @@
+pluginManagement {
+    repositories {
+        mavenLocal()
+        maven {
+            url uri("file://${rootProject.projectDir}/repo")
+        }
+        gradlePluginPortal()
+    }
+}
+rootProject.name = 'multi-module-project'
+include 'utils'
+include 'plugin'
+include 'core'
+include 'api'
+
